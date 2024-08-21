@@ -8,8 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "Телеграм-канал": "https://t.me/kto1_ai",
+      "Информация о сайте": "/credits",
+      "Контакт": "mailto:info@kto1.io",
     },
   }),
 }
@@ -21,18 +22,20 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.TableOfContents()
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    //Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    //Component.Graph(),
+    Component.DesktopOnly(Component.Explorer()),
+    //Component.DesktopOnly(Component.TableOfContents()),
+    //Component.Backlinks(),
   ],
 }
 
