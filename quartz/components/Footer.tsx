@@ -21,7 +21,7 @@ export default ((opts?: Options) => {
           ))}
         </ul>
         <p>
-          "© 2024" <a href="https://kto1.io">Модуль Роста™</a>
+          © 2024 <a href="https://kto1.io">Модуль Роста™</a>
         </p>
       </footer>
     )
